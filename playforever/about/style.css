@@ -1,77 +1,71 @@
-/* Add a black background color to the top navigation */
 .navbar {
-    background-color: black; /* This sets the background to black */
-    overflow: hidden;
-    display: flex; /* Changed to use flexbox for better alignment */
-    align-items: center; /* Align items vertically */
+    background-color: black; /* Black background */
+    overflow: hidden; /* Ensures no scrollbars are added to the navbar */
+    display: flex; /* Aligns children inline */
+    align-items: center; /* Vertically centers children */
+    justify-content: space-between; /* Distributes extra space */
+    position: fixed; /* Fixes navbar to the top */
+    top: 0; /* Aligns navbar to the top */
+    left: 0; /* Aligns navbar to the left */
+    width: 100%; /* Navbar spans the full width */
+    z-index: 10; /* Ensures navbar is above other content */
 }
 
-#get-updates {
-    background-color: yellow; /* Set the background color to yellow */
-    color: black; /* Set the text color to black for contrast */
-}
-#get-updates:hover {
-    background-color: yellow; /* Keep the background color yellow on hover */
-    color: black; /* Keep the text color black on hover */
-}
-
-/* .logo img {
-    display: block; /* Ensure the logo is a block-level element */
-    max-height: 50px; /* Maximum height for the logo */
-    /* Adjust the max-height as needed */
-    padding: 10px 16px; /* Add some padding around the logo */
-} */
-
-/* Style the logo inside the navigation bar */
 .logo {
-    color: gold; /* Logo text color */
-    padding: 14px 16px; /* Same padding as the navigation links */
-    font-weight: bold; /* Make the logo font bold */
-    font-size: 17px;
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    display: flex; /* Enables flexbox for centering */
+    align-items: center; /* Vertically centers the logo */
+    justify-content: center; /* Horizontally centers the logo */
+    height: 60px; /* Sets a fixed height for the logo area */
+    padding-left: 10px; /* Adds some padding on the left */
+    flex-grow: 0; /* Prevents the logo from growing */
+    flex-shrink: 0; /* Prevents the logo from shrinking */
 }
 
-/* Add a yellow right border to the logo */
-.logo::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 2px; /* Width of the yellow line */
-    background-color: yellow; /* Color of the line */
+.logo img {
+    max-height: 100%; /* Ensures the logo's height doesn't exceed the navbar */
+    max-width: 100%; /* Ensures the logo's width doesn't exceed its container */
+    object-fit: contain; /* Keeps the aspect ratio while fitting in the container */
 }
 
-/* Style the links inside the navigation bar */
-.navbar a {
-    flex-grow: 1; /* Each link will grow to take up equal space */
+/* Style the logo and links */
+.logo, .navbar a {
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    justify-content: center; /* Center the content horizontally */
+    position: relative;
+    flex-grow: 1;
+    text-decoration: none; /* Removes the underline from links */
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    color: #f2f2f2; /* This sets the link color to off-white/greyish */
-    font-size: 17px;
-    position: relative; /* Needed for absolute positioning of the pseudo-element */
+    display: block; /* Makes each link fill the container */
+    color: white;
 }
 
-/* Add a yellow right border to each link except the last one */
-.navbar a:not(:last-child)::after {
+/* Ensure the logo and links fill the container */
+.logo img, .navbar a {
+    height: 100%;
+    padding: 15px 20px; /* adjust as necessary */
+}
+
+/* Add the yellow vertical line to the logo */
+.logo::after, .navbar a:not(:last-child)::after {
     content: '';
     position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
-    width: 2px; /* Width of the yellow line */
-    background-color: yellow; /* Color of the line */
+    width: 2px;
+    background-color: yellow;
 }
 
-/* Change the color of links on hover */
-.navbar a:hover {
-    background-color: #ddd; /* Hover background color */
-    color: black; /* Text color on hover */
+/* Style for 'GET UPDATES' to stand out */
+#get-updates {
+    background-color: yellow;
+    color: black;
+    padding: 15px 20px; /* adjust as necessary */
 }
 
-/* Add a color to the active/current link */
-.navbar a.active {
-    background-color: #555; /* Active link background */
-    color: white; /* Active link text color */
+/* Clear any margin or padding that may affect the layout */
+body, h1, p, ul, li, a {
+    margin: 0;
+    padding: 0;
 }
