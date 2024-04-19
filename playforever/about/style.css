@@ -1,0 +1,77 @@
+/* Add a black background color to the top navigation */
+.navbar {
+    background-color: black; /* This sets the background to black */
+    overflow: hidden;
+    display: flex; /* Changed to use flexbox for better alignment */
+    align-items: center; /* Align items vertically */
+}
+
+#get-updates {
+    background-color: yellow; /* Set the background color to yellow */
+    color: black; /* Set the text color to black for contrast */
+}
+#get-updates:hover {
+    background-color: yellow; /* Keep the background color yellow on hover */
+    color: black; /* Keep the text color black on hover */
+}
+
+/* .logo img {
+    display: block; /* Ensure the logo is a block-level element */
+    max-height: 50px; /* Maximum height for the logo */
+    /* Adjust the max-height as needed */
+    padding: 10px 16px; /* Add some padding around the logo */
+} */
+
+/* Style the logo inside the navigation bar */
+.logo {
+    color: gold; /* Logo text color */
+    padding: 14px 16px; /* Same padding as the navigation links */
+    font-weight: bold; /* Make the logo font bold */
+    font-size: 17px;
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+}
+
+/* Add a yellow right border to the logo */
+.logo::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px; /* Width of the yellow line */
+    background-color: yellow; /* Color of the line */
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+    flex-grow: 1; /* Each link will grow to take up equal space */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #f2f2f2; /* This sets the link color to off-white/greyish */
+    font-size: 17px;
+    position: relative; /* Needed for absolute positioning of the pseudo-element */
+}
+
+/* Add a yellow right border to each link except the last one */
+.navbar a:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 2px; /* Width of the yellow line */
+    background-color: yellow; /* Color of the line */
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Hover background color */
+    color: black; /* Text color on hover */
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+    background-color: #555; /* Active link background */
+    color: white; /* Active link text color */
+}
