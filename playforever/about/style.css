@@ -1,71 +1,414 @@
-.navbar {
-    background-color: black; /* Black background */
-    overflow: hidden; /* Ensures no scrollbars are added to the navbar */
-    display: flex; /* Aligns children inline */
-    align-items: center; /* Vertically centers children */
-    justify-content: space-between; /* Distributes extra space */
-    position: fixed; /* Fixes navbar to the top */
-    top: 0; /* Aligns navbar to the top */
-    left: 0; /* Aligns navbar to the left */
-    width: 100%; /* Navbar spans the full width */
-    z-index: 10; /* Ensures navbar is above other content */
-}
-
-.logo {
-    display: flex; /* Enables flexbox for centering */
-    align-items: center; /* Vertically centers the logo */
-    justify-content: center; /* Horizontally centers the logo */
-    height: 60px; /* Sets a fixed height for the logo area */
-    padding-left: 10px; /* Adds some padding on the left */
-    flex-grow: 0; /* Prevents the logo from growing */
-    flex-shrink: 0; /* Prevents the logo from shrinking */
-}
-
-.logo img {
-    max-height: 100%; /* Ensures the logo's height doesn't exceed the navbar */
-    max-width: 100%; /* Ensures the logo's width doesn't exceed its container */
-    object-fit: contain; /* Keeps the aspect ratio while fitting in the container */
-}
-
-/* Style the logo and links */
-.logo, .navbar a {
-    display: flex;
-    align-items: center; /* Center the content vertically */
-    justify-content: center; /* Center the content horizontally */
-    position: relative;
-    flex-grow: 1;
-    text-decoration: none; /* Removes the underline from links */
-    text-align: center;
-    display: block; /* Makes each link fill the container */
-    color: white;
-}
-
-/* Ensure the logo and links fill the container */
-.logo img, .navbar a {
-    height: 100%;
-    padding: 15px 20px; /* adjust as necessary */
-}
-
-/* Add the yellow vertical line to the logo */
-.logo::after, .navbar a:not(:last-child)::after {
-    content: '';
+.title1 svg {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    width: 2px;
-    background-color: yellow;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 760px;
+}
+  
+  .border1 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 760px;
+    width: 1320px;
+}
+.title2 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 1138px;
+}
+  
+  .border2 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1138px;
+    width: 1380px;
+}
+.title3 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 1654px;
+}
+  
+  .border3 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 2244px;
+    width: 1340px;
+}
+.title4 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 2244px;
+}
+  
+  .border4 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 2847px;
+    width: 1340px;
+}
+.title5 svg {
+    position: absolute;
+    width: 30%;
+    height: auto;
+    left: 0;
+    top: 2847px;
+}
+  
+  .border5 svg {
+    margin-top: 0px;
+    height: 20px;
+    background: #BABABA;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 1654px;
+    width: 1340px;
 }
 
-/* Style for 'GET UPDATES' to stand out */
-#get-updates {
-    background-color: yellow;
-    color: black;
-    padding: 15px 20px; /* adjust as necessary */
+
+
+/* General body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin-top: 100px; /* Added space for fixed navbar */
+    margin: 0; /* Override any default margin */
+    padding-top: 50px; /* Adjust this value based on your navbar's height to avoid content being hidden behind it */
 }
 
-/* Clear any margin or padding that may affect the layout */
-body, h1, p, ul, li, a {
-    margin: 0;
-    padding: 0;
+/* About Us Section Styling */
+.image-container {
+    max-width: 100%;
+    margin: 0; /* Ensure there's no margin causing space */
+    padding: 0; /* Ensure there's no padding causing space */
+    overflow: hidden; /* Ensures no scrollbars are added */
+  }
+
+.about-image {
+    display: block; /* This will remove any default inline spacing */
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    margin: 0; /* Reset any default margin */
+  }
+
+.about-us-container {
+    text-align: center;
+    padding: 0px;
+    background-color: #f2f2f2; /* Light grey background */
 }
+
+.about-us-content h2 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 30px;
+}
+
+/* Mission & Vision Section Styling */
+
+.mission-container {
+    background-image: url('../images/MISSION + VISION.png'); /* Replace with the actual path to your background image */
+    background-size: fill;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.mission-content {
+    color: black; /* Text color */
+    padding: 100px;
+    max-width: 1000px; /* Adjust as per your design */
+    border-radius: 10px; /* Add rounded corners */
+    text-align: left;
+    width: 1500px;
+}
+
+.mission-content h1 {
+    font-size: 2.5rem; /* Larger font size for the title */
+    margin-bottom: 1rem; /* Space below the title */
+    font-weight: bold; /* Bold font weight */
+    text-transform: uppercase; /* Uppercase text for the title */
+    letter-spacing: 2px; /* More spacing between letters for the title */
+    color: #ffd700; /* Gold color for the title */
+}
+
+.mission-content p {
+    font-size: 1.2rem; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for paragraph readability */
+    margin-bottom: 1rem; /* Space below each paragraph */
+}
+
+/* Values Section Styling */
+.value-card {
+    background-color: white; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    width: 200px; /* Adjusted width for a smaller card */
+    margin: 20px; /* Center card and add space around */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    overflow: hidden; /* Ensure overflow is handled */
+}
+
+.values-cards-container {
+    display: flex; /* Establishes a flex container */
+    flex-wrap: wrap; /* Allows cards to wrap onto the next line if there's not enough space */
+    justify-content: center; /* Centers the cards horizontally */
+    gap: 20px; /* Space between the cards */
+    margin-top: 100px;
+    padding-bottom: 100px;
+  }
+  
+  .value-icon-bg {
+    background-color: #FFDC8E; /* Yellow background for the icon container */
+    padding: 15px; /* Adjusted padding for the icon */
+}
+  
+  .value-icon {
+    max-width: 80px; /* Adjusted max width for a smaller icon */
+    height: auto; /* Height is auto for responsive */
+}
+  
+  .value-title-bg {
+    background-color: #464646; /* Black background for the title container */
+    color: white; /* White text color */
+    text-transform: uppercase; /* Uppercase text */
+    text-align: center; /* Center the text */
+    padding: 8px 0; /* Adjusted padding top and bottom for a smaller title box */
+    border-radius: 3px;
+}
+  
+  .value-title {
+    font-size: 1rem; /* Adjusted size of the title text */
+    letter-spacing: 1px; /* Space between letters */
+}
+  
+  .value-description {
+    color: #666; /* Grey color for the text */
+    font-size: 0.8rem; /* Adjusted size of the description text for smaller card */
+    line-height: 1.4; /* Line height for readability */
+    padding: 10px; /* Adjusted padding inside the description for smaller card */
+    text-align: center; /* Center the text */
+    margin: 0; /* Remove default margins */
+}
+  
+/* Our Story Section Styling */
+.our-story-container {
+    display: flex;
+    align-items: center; /* Centers the content vertically */
+    justify-content: space-between; /* Space between text and image */
+    background-color: #FEC547; /* Light grey background */
+    padding: 100px; /* Padding around the content */
+    margin-bottom: 0;
+  }
+  
+  .our-story-text {
+    flex-basis: 50%; /* Takes up half the container */
+    padding-right: 20px; /* Adds some space between the text and the image */
+  }
+  
+  .our-story-text h2 {
+    color: #333; /* Dark grey color for the heading */
+    margin-bottom: 30px;
+  }
+  
+  .our-story-text p {
+    font-size: 1.0rem; /* Font size for the paragraph */
+    line-height: 1.6; /* Line height for paragraph readability */
+    color: #333; /* Dark grey color for the text */
+    text-align: left;
+  }
+  
+  .our-story-image {
+    flex-basis: 50%; /* Takes up half the container */
+  }
+  
+  .our-story-image img {
+    width: 100%; /* Full width of the container */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 500px; /* Maximum width of the image, adjust as needed */
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  /* You can keep the rest of your existing styles unchanged */
+  
+  /* Responsive adjustments for smaller screens */
+  @media (max-width: 768px) {
+    .our-story-container {
+      flex-direction: column; /* Stack the text and image on top of each other */
+    }
+  
+    .our-story-text, .our-story-image {
+      flex-basis: 100%; /* Each takes full width of the container */
+    }
+  
+    .our-story-text {
+      padding-right: 0; /* Removes the padding on the right for the text */
+    }
+  
+    .our-story-image img {
+      max-width: 100%; /* Image takes full width of the container */
+    }
+  }
+  
+/* The Founder Section Styling */
+.founder-section {
+    display: flex;
+    background-color: #FFEDC4; /* Yellow background color */
+    padding: 100px;
+    align-items: center;
+    justify-content: space-between; /* Spacing between image and text */
+    /* margin-top: 0; */
+    /* padding-top: 0; */
+  }
+  
+  .founder-image {
+    flex-basis: 50%; /* Adjust the width as necessary */
+    padding-right: 20px; /* Space between the image and the text */
+  }
+  
+  .founder-image img {
+    width: 100%;
+    height: auto;
+    max-width: 400px; /* Adjust based on your design preference */
+    border-radius: 10px; /* Rounded corners for the image */
+  }
+  
+  .founder-text {
+    flex-basis: 50%; /* Adjust the width as necessary */
+    padding-left: 20px; /* Space between the image and the text */
+  }
+  
+  /* .founder-text h2 {
+    color: #333;
+    margin-bottom: 0.5em; /* Space below the heading
+  } */
+  
+  /* .founder-text h3 {
+    color: #333;
+    margin-top: 0; /* Remove margin above 
+  } */
+  
+  .founder-text p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333; /* Adjust color as necessary */
+    text-align: left;
+  }
+  
+  @media (max-width: 768px) {
+    .founder-section {
+      flex-direction: column-reverse; /* Image will be above the text */
+      text-align: center;
+    }
+  
+    .founder-image, .founder-text {
+      flex-basis: 100%; /* Full width on smaller screens */
+      padding-right: 0; /* Reset padding */
+      padding-left: 0; /* Reset padding */
+    }
+  
+    .founder-image img {
+      max-width: 100%; /* Full width of the container */
+    }
+  }
+  
+  /* Leadership Section Styling */
+  .leadership-section {
+    background-color: #FFF; /* Change the background color as needed */
+    padding: 50px; /* Adjust padding */
+    text-align: center; /* Center aligning the text */
+  }
+  
+  .leadership-section h2 {
+    font-size: 2rem; /* Size of the section title */
+    color: #000; /* Color of the section title */
+    margin-bottom: 20px; /* Space below the section title */
+  }
+  
+  .leadership-section p {
+    font-size: 14px; /* Size of the section paragraph */
+    margin-bottom: 30px; /* Space below the section paragraph */
+    /* text-align: left; */
+  }
+  
+  .leadership-members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 0fr));
+    gap: 5px; /* Reduced gap for bringing cards closer */
+    justify-content: center; /* This will center the cards in the grid if there's extra space */
+    align-items: center;
+    padding-left: 50px;
+  }
+  
+  .leadership-member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* Optional: Set a max-width if the cards are too wide */
+    max-width: 350px; /* Adjust this value as needed to bring cards closer */
+  }
+  
+  .leadership-member img {
+    width: 100%; /* Full width */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 250px; /* Maximum width of image */
+    border-radius: 5%; /* Round the images */
+    margin-bottom: 10px; /* Space below the image */
+  }
+  
+  .leadership-member h3 {
+    font-size: 1.2rem; /* Size of the member name */
+    color: #000; /* Color of the member name */
+    margin-bottom: 5px; /* Space below the member name */
+  }
+  
+  .leadership-member p {
+    font-size: 16px; /* Size of the member role */
+    color: #666; /* Color of the member role */
+  }
+  .contact-us-button {
+    background-color: #F2B544; /* Button color */
+    color: black; /* Text color */
+    padding: 10px 20px; /* Padding inside button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* No underline */
+    font-weight: bold; /* Bold text */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  .contact-us-button:hover {
+    background-color: #F2B544; /* Darker on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .leadership-members {
+      justify-content: center; /* Center items on small screens */
+    }
+  
+    .leadership-member {
+      flex-basis: calc(50% - 20px); /* Two items per row on small screens */
+    }
+  }

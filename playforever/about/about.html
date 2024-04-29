@@ -9,14 +9,214 @@
     <link rel="icon" href="favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div class="navbar">
-      <div class="logo"><img src="../images/logo.jpg"></div>
-      <a href="#about">ABOUT</a>
-      <a href="#programs">PROGRAMS</a>
-      <a href="#partnership">PARTNERSHIP</a>
-      <a href="#contact">CONTACT</a>
-      <a href="#updates" id="get-updates">GET UPDATES</a>
-    </div>
     <script src="index.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function() {
+          var currentHash = window.location.hash;
+          if (currentHash) {
+              var activeLink = document.querySelector('a[href="' + currentHash + '"]');
+              if (activeLink) {
+                  activeLink.classList.add('active');
+              }
+          }
+      });
+      </script>
+      
+
+    <div class="image-container">
+      <img src="../images/Screenshot 2024-04-23 at 2.43.14 PM.png" class="about-image">
+    </div>
+    <div class="about-us-container">
+      <div class="about-us-content">
+          <!-- Mission & Vision Section -->
+          <div class="mission-container">
+            <div class="border1">
+              <svg width="1154" height="20" viewBox="0 0 1154 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1154V20H0V0Z" fill="#BABABA"/>
+              </svg>
+            </div>
+            <div class="title1">
+              <svg width="589" height="58" viewBox="0 0 589 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L589 0L341.557 58H0L0 0Z" fill="#E9EBEF"/>
+                <text x="40" y="40" font-family="Open Sans" font-size="30" fill="#000000">MISSION + VISION</text>
+              </svg>
+            </div>
+            <div class="mission-content">
+                <p><b>Play Forever is a non-profit organization providing free and accessible recreation, education & health services to youth and seniors.</b></p>
+                <p>Our dream is to see youth and seniors in the Greater Toronto Area (GTA) access health services and recreation opportunities, learn job-ready skills, and build lasting community.</p>
+            </div>
+        </div>
+
+          <!-- Values Section -->
+          <div class="values-section">
+          <div class="values-cards-container">
+            <div class="border2">
+              <svg width="1154" height="20" viewBox="0 0 1154 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1154V20H0V0Z" fill="#BABABA"/>
+              </svg>
+            </div>
+            <div class="title2">
+              <svg width="589" height="58" viewBox="0 0 589 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L589 0L341.557 58H0L0 0Z" fill="#E9EBEF"/>
+                <text x="40" y="40" font-family="Open Sans" font-size="30" fill="#000000">VALUES</text>
+                </svg>
+            </div>
+            <div class="value-card">
+              <div class="value-icon-bg">
+                  <img src="../images/fun.png" alt="Fun" class="value-icon">
+              </div>
+              <div class="value-title-bg">
+                  <span class="value-title">FUN</span>
+              </div>
+              <p class="value-description">We believe FUN is an underrated value, but an especially important one when working with youth!</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-bg">
+                  <img src="../images/bow.png" alt="Fun" class="value-icon">
+              </div>
+              <div class="value-title-bg">
+                  <span class="value-title">RESPECT</span>
+              </div>
+              <p class="value-description">To us, RESPECT means seeing and treating another person as your equal.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-bg">
+                  <img src="../images/solidarity.png" alt="Fun" class="value-icon">
+              </div>
+              <div class="value-title-bg">
+                  <span class="value-title">EMPOWERMENT</span>
+              </div>
+              <p class="value-description">As our work centers underserved youth and serniors, we are committed to EMPOWERING them through our programming.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-bg">
+                  <img src="../images/happiness.png" alt="Fun" class="value-icon">
+              </div>
+              <div class="value-title-bg">
+                  <span class="value-title">DIVERSITY & INCLUSION</span>
+              </div>
+              <p class="value-description">DIVERSITY & INCLUSION are more than just buzz words to us--they’re guideposts for all of our work.</p>
+            </div>
+
+            <div class="value-card">
+              <div class="value-icon-bg">
+                  <img src="../images/responsibility.png" alt="Fun" class="value-icon">
+              </div>
+              <div class="value-title-bg">
+                  <span class="value-title">COMMUNITY PARTNERSHIPS</span>
+              </div>
+              <p class="value-description">We wouldn’t be here without our amazing COMMUNITY PARTNERS, and we count their support as cruicial to our success.</p>
+            </div>
+          </div>
+          </div>
+
+          <!-- Our Story Section -->
+          <div class="our-story-container">
+            <div class="border3">
+              <svg width="1154" height="20" viewBox="0 0 1154 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1154V20H0V0Z" fill="#BABABA"/>
+              </svg>
+            </div>
+            <div class="title3">
+              <svg width="589" height="58" viewBox="0 0 589 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L589 0L341.557 58H0L0 0Z" fill="#E9EBEF"/>
+                <text x="40" y="40" font-family="Open Sans" font-size="30" fill="#000000">OUR STORY</text>
+                </svg>
+            </div>
+            <div class="our-story-text"> 
+              <p>The journey of Play Forever began with a simple yet powerful idea: to bring joy and opportunity to the youth of underserved areas in Toronto. It all started when a group of passionate individuals, deeply moved by the disparities in access to recreational activities, came together with a shared vision. Fueled by their commitment to making a difference, they set out to create a space where every child could thrive, regardless of their background or circumstances. Through hard work, determination, and the unwavering support of the community, what began as a humble initiative quickly blossomed into a full-fledged nonprofit organization. Over the years, we have grown and evolved, expanding our reach and impact, but our core mission remains unchanged: to provide young people with the tools and opportunities they need to succeed on and off the field. Today, as we reflect on our journey, we are filled with gratitude for the countless individuals who have joined us along the way, each one playing a vital role in shaping the story of Play Forever and the lives of the children we serve.</p>
+            </div>
+            <div class="our-story-image">
+              <img src="../images/Screenshot 2024-04-23 at 8.21.56 PM.png" alt="Our Story Photo">
+            </div>
+          </div>
+          <!-- The Founder Section -->
+          <div class="founder-section">
+            <div class="border4">
+              <svg width="1154" height="20" viewBox="0 0 1154 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1154V20H0V0Z" fill="#BABABA"/>
+              </svg>
+            </div>
+            <div class="title4">
+              <svg width="589" height="58" viewBox="0 0 589 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L589 0L341.557 58H0L0 0Z" fill="#E9EBEF"/>
+                <text x="40" y="40" font-family="Open Sans" font-size="30" fill="#000000">THE FOUNDER</text>
+                </svg>
+            </div>
+            <div class="founder-image">
+              <img src="../images/Screenshot 2024-04-23 at 8.56.25 PM.png" alt="Mohammed Al-Salam">
+            </div>
+            <div class="founder-text">
+              <p>As Founder and Lead Director of Play Forever. Over the past 8 years, Mohammed has rapidly progressed within municipal government and community organizations to oversee Community Relations, Community Development, and Communications portfolios. </p>
+              <p>Mohammed has established a reputation as a natural relationship builder and stakeholder advocate and has played an instrumental role in securing the approvals, public support, and stakeholder buy-in that’s necessary to advance critical projects which in turn, improves community well-being. He has a record of forging community partnerships and activating corporate sponsors to achieve community/organizational goals for Play Forever.</p>
+              <p>Mohammed considers himself a motivating and engaging manager with a history of leading teams of staff and volunteers to execute performance and program delivery goals.</p>
+              <!-- Additional text here -->
+            </div>
+          </div>
+          <!-- Leadership Section -->
+          <div class="leadership-section">
+            <div class="border5">
+              <svg width="1154" height="20" viewBox="0 0 1154 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0H1154V20H0V0Z" fill="#BABABA"/>
+              </svg>
+            </div>
+            <div class="title5">
+              <svg width="589" height="58" viewBox="0 0 589 58" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0L589 0L341.557 58H0L0 0Z" fill="#E9EBEF"/>
+                <text x="40" y="40" font-family="Open Sans" font-size="30" fill="#000000">LEADERSHIP</text>
+                </svg>
+            </div>
+            <p style="text-align: left;">Our organization is uniquely led by youth and seniors from the same populations we serve. The Board of Directors plays a vital role in making sure that the heart of PF keeps on beating. Their dedication to our mission is what has allowed us to provide life-changing programming and services for over 100 youth in the Greater Toronto Area.</p>
+            <div class="leadership-members">
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.19.37 PM.png" alt="Azad Gulam">
+                  <h3>Azad Gulam</h3>
+                  <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.24.00 PM.png" alt="Sahal Abdi">
+                <h3>SAHAL ABDI</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.31.00 PM.png" alt="Said Abdi">
+                <h3>SAID ABDI</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.31.54 PM.png" alt="Kenny Au">
+                <h3>KENNY AU</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.33.44 PM.png" alt="AYANLE OMAR">
+                <h3>AYANLE OMAR</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.36.37 PM.png" alt="Adam Osman">
+                <h3>ADAM OSMAN</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.38.41 PM.png" alt="Ahmad Osman">
+                <h3>AHMAD OSMAN</h3>
+                <p>Board Member</p>
+              </div>
+              <div class="leadership-member">
+                <img src="../images/Screenshot 2024-04-24 at 1.38.48 PM.png" alt="Anthoine Walters">
+                <h3>ANTHOINE WALTERS</h3>
+                <p>Board Member</p>
+              </div>
+            </div>
+            <div class="leadership-contact">
+              <p>Want to learn more about us?</p>
+              <a href="contact.html" class="contact-us-button">CONTACT US</a>
+            </div>
+          </div>
   </body>
 </html>
+  
