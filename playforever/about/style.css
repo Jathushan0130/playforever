@@ -14,14 +14,14 @@
     margin-right: auto;
     position: absolute;
     top: 760px;
-    width: 1320px;
+    width: 1440px;
 }
 .title2 svg {
     position: absolute;
     width: 30%;
     height: auto;
     left: 0;
-    top: 1138px;
+    top: 1081px;
 }
   
   .border2 svg {
@@ -31,7 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 1138px;
+    top: 1081px;
     width: 1380px;
 }
 .title3 svg {
@@ -39,7 +39,7 @@
     width: 30%;
     height: auto;
     left: 0;
-    top: 1654px;
+    top: 1577px;
 }
   
   .border3 svg {
@@ -49,15 +49,15 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 2244px;
-    width: 1340px;
+    top: 1577px;
+    width: 1370px;
 }
 .title4 svg {
     position: absolute;
     width: 30%;
     height: auto;
     left: 0;
-    top: 2244px;
+    top: 2178px;
 }
   
   .border4 svg {
@@ -67,7 +67,7 @@
     margin-left: auto;
     margin-right: auto;
     position: absolute;
-    top: 2847px;
+    top: 2178px;
     width: 1340px;
 }
 .title5 svg {
@@ -75,17 +75,17 @@
     width: 30%;
     height: auto;
     left: 0;
-    top: 2847px;
+    top: 2800px;
 }
   
   .border5 svg {
     margin-top: 0px;
     height: 20px;
     background: #BABABA;
-    margin-left: auto;
+    margin-left: -500px;
     margin-right: auto;
     position: absolute;
-    top: 1654px;
+    top: 2800px;
     width: 1340px;
 }
 
@@ -95,9 +95,13 @@
 body {
     font-family: 'Arial', sans-serif;
     margin-top: 100px; /* Added space for fixed navbar */
-    margin: 0; /* Override any default margin */
     padding-top: 50px; /* Adjust this value based on your navbar's height to avoid content being hidden behind it */
+    width: 1440px; /* Fixed width of the main content area */
+    margin: 0 auto; /* Centers the layout on larger screens */
+    overflow-x: hidden; /* Hides horizontal overflow, preventing horizontal scroll on smaller screens */
 }
+
+
 
 /* About Us Section Styling */
 .image-container {
@@ -107,12 +111,13 @@ body {
     overflow: hidden; /* Ensures no scrollbars are added */
   }
 
-.about-image {
-    display: block; /* This will remove any default inline spacing */
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0; /* Reset any default margin */
-  }
+  .about-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin: 0;
+}
 
 .about-us-container {
     text-align: center;
@@ -127,39 +132,39 @@ body {
 
 /* Mission & Vision Section Styling */
 
+.image-container img {
+    width: 100%; /* This makes sure the image is as wide as its container */
+    height: 100%; /* This makes the image as tall as its container */
+    object-fit: cover; /* This makes the image cover the container completely */
+  }
+  
+
 .mission-container {
-    background-image: url('../images/MISSION + VISION.png'); /* Replace with the actual path to your background image */
+    background-image: url('../imagesJath/missionreg.png'); /* Replace with the actual path to your background image */
     background-size: fill;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-bottom: 100px;
+    padding: 87px 0; /* Adjust padding to ensure content is centered */
 }
 
 .mission-content {
     color: black; /* Text color */
-    padding: 100px;
-    max-width: 1000px; /* Adjust as per your design */
+    padding: 0 20px;
     border-radius: 10px; /* Add rounded corners */
     text-align: left;
-    width: 1500px;
 }
 
-.mission-content h1 {
-    font-size: 2.5rem; /* Larger font size for the title */
-    margin-bottom: 1rem; /* Space below the title */
-    font-weight: bold; /* Bold font weight */
-    text-transform: uppercase; /* Uppercase text for the title */
-    letter-spacing: 2px; /* More spacing between letters for the title */
-    color: #ffd700; /* Gold color for the title */
-}
 
 .mission-content p {
-    font-size: 1.2rem; /* Font size for the paragraph */
+    font-size: 18px; /* Font size for the paragraph */
     line-height: 1.6; /* Line height for paragraph readability */
-    margin-bottom: 1rem; /* Space below each paragraph */
+    margin-bottom: 10px; /* Space below each paragraph */
+    width: 60%;
+    margin-right: 70px;
+
 }
 
 /* Values Section Styling */
@@ -220,25 +225,23 @@ body {
     align-items: center; /* Centers the content vertically */
     justify-content: space-between; /* Space between text and image */
     background-color: #FEC547; /* Light grey background */
-    padding: 100px; /* Padding around the content */
+    padding: 70px; /* Padding around the content */
     margin-bottom: 0;
   }
   
   .our-story-text {
     flex-basis: 50%; /* Takes up half the container */
-    padding-right: 20px; /* Adds some space between the text and the image */
+    padding-right: 50px; /* Adds some space between the text and the image */
   }
   
-  .our-story-text h2 {
-    color: #333; /* Dark grey color for the heading */
-    margin-bottom: 30px;
-  }
   
   .our-story-text p {
-    font-size: 1.0rem; /* Font size for the paragraph */
-    line-height: 1.6; /* Line height for paragraph readability */
+    font-size: 18px; /* Font size for the paragraph */
+    line-height: 1.2; /* Line height for paragraph readability */
     color: #333; /* Dark grey color for the text */
     text-align: left;
+    margin-right: 45px;
+    padding-right: 40px;
   }
   
   .our-story-image {
@@ -246,11 +249,13 @@ body {
   }
   
   .our-story-image img {
-    width: 100%; /* Full width of the container */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 500px; /* Maximum width of the image, adjust as needed */
-    border-radius: 10px; /* Rounded corners for the image */
-  }
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 600px;
+    border-radius: 10px;
+    padding-right: 100px;
+}
   
   /* You can keep the rest of your existing styles unchanged */
   
@@ -285,37 +290,29 @@ body {
   }
   
   .founder-image {
-    flex-basis: 50%; /* Adjust the width as necessary */
-    padding-right: 20px; /* Space between the image and the text */
+    flex-basis: 45%; /* Adjust the width as necessary */
+    padding-right: 90px; /* Space between the image and the text */
   }
   
   .founder-image img {
     width: 100%;
     height: auto;
-    max-width: 400px; /* Adjust based on your design preference */
-    border-radius: 10px; /* Rounded corners for the image */
-  }
+    object-fit: cover;
+    max-width: 400px;
+    border-radius: 10px;
+}
   
   .founder-text {
     flex-basis: 50%; /* Adjust the width as necessary */
     padding-left: 20px; /* Space between the image and the text */
   }
   
-  /* .founder-text h2 {
-    color: #333;
-    margin-bottom: 0.5em; /* Space below the heading
-  } */
-  
-  /* .founder-text h3 {
-    color: #333;
-    margin-top: 0; /* Remove margin above 
-  } */
-  
   .founder-text p {
-    font-size: 16px;
-    line-height: 1.6;
+    font-size: 18px;
+    line-height: 1.3;
     color: #333; /* Adjust color as necessary */
     text-align: left;
+    margin-right: 150px;
   }
   
   @media (max-width: 768px) {
@@ -351,16 +348,14 @@ body {
   .leadership-section p {
     font-size: 14px; /* Size of the section paragraph */
     margin-bottom: 30px; /* Space below the section paragraph */
-    /* text-align: left; */
   }
   
   .leadership-members {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 0fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 0fr));
     gap: 5px; /* Reduced gap for bringing cards closer */
     justify-content: center; /* This will center the cards in the grid if there's extra space */
     align-items: center;
-    padding-left: 50px;
   }
   
   .leadership-member {
@@ -368,26 +363,30 @@ body {
     flex-direction: column;
     align-items: center;
     /* Optional: Set a max-width if the cards are too wide */
-    max-width: 350px; /* Adjust this value as needed to bring cards closer */
+    max-width: 300px; /* Adjust this value as needed to bring cards closer */
   }
   
   .leadership-member img {
-    width: 100%; /* Full width */
-    height: auto; /* Maintain aspect ratio */
-    max-width: 250px; /* Maximum width of image */
-    border-radius: 5%; /* Round the images */
-    margin-bottom: 10px; /* Space below the image */
-  }
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    max-width: 300px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+    margin-left: -150px;
+}
   
   .leadership-member h3 {
     font-size: 1.2rem; /* Size of the member name */
     color: #000; /* Color of the member name */
     margin-bottom: 5px; /* Space below the member name */
+    margin-left: -150px;
   }
   
   .leadership-member p {
     font-size: 16px; /* Size of the member role */
     color: #666; /* Color of the member role */
+    margin-left: -150px;
   }
   .contact-us-button {
     background-color: #F2B544; /* Button color */
@@ -397,12 +396,19 @@ body {
     text-decoration: none; /* No underline */
     font-weight: bold; /* Bold text */
     transition: background-color 0.3s; /* Smooth transition for hover effect */
+    margin-left: -150px;
   }
   
   .contact-us-button:hover {
     background-color: #F2B544; /* Darker on hover */
   }
   
+  .about-us-container, .mission-container, .values-section, .our-story-container, .founder-section, .leadership-section {
+    width: 100%; /* Adjust width to always fit within the body element */
+    max-width: 1440px; /* Maximum width to align with the body */
+    margin: 0 auto; /* Center align if needed */
+}
+
   @media (max-width: 768px) {
     .leadership-members {
       justify-content: center; /* Center items on small screens */
@@ -411,4 +417,26 @@ body {
     .leadership-member {
       flex-basis: calc(50% - 20px); /* Two items per row on small screens */
     }
+    .our-story-text, .our-story-image, .founder-image, .founder-text {
+        flex-basis: 50%; /* Keep the flex basis consistent, ignore mobile-specific adjustments */
+    }
   }
+  .footer {
+    clear: both;
+    background: #2B2B2B;
+    margin-top:15%;
+    color: #fff;
+    padding: 2px;
+    text-align: center; 
+  }
+  
+  .footer i {
+    clear: both;
+    font-size: 50px;
+    color: #FFEDC4;
+    margin-left: 20px;
+  }
+
+
+
+
